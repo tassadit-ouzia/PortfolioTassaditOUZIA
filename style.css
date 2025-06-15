@@ -1,0 +1,358 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #ffeaf4;
+  color: #222;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  color: #d72660;
+}
+
+.subtitle {
+  color: #b30059;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 18px 0 0 0;
+}
+.contact-info a {
+  color: #d72660;
+  text-decoration: underline;
+}
+
+.outils-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.outil-card {
+  background: #ffd6e0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(255,182,213,0.08);
+  padding: 18px 14px;
+  width: 180px;
+  text-align: center;
+}
+.outil-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.competences-title {
+  letter-spacing: 1px;
+  font-size: 2em;
+  margin-bottom: 18px;
+}
+
+.competences-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.competence-item {
+  background: #ffd6e0;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+.qualities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+.qualities-list li {
+  background: #ffd6e0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.astrologie {
+  margin-top: 18px;
+  background: #ffd6e0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-align: center;
+}
+.astro-img {
+  width: 60px;
+  margin-bottom: 8px;
+}
+
+.specialites-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.specialite-card {
+  background: #ffd6e0;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(255,182,213,0.08);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.specialite-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 10px;
+}
+
+.tech-flex {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  background: #ffd6e0;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.tech-img {
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255,182,213,0.08);
+  object-fit: cover;
+}
+.tech-note {
+  color: #d72660;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.bilan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.bilan-card {
+  background: #ffd6e0;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(255,182,213,0.08);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bilan-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.desc-btn {
+  background: #d72660;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.desc-btn:hover {
+  background: #b30059;
+}
+.desc-content {
+  display: none;
+  background: #ffeaf4;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 8px;
+  font-size: 0.95em;
+  text-align: left;
+}
+.citation {
+  color: #d72660;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .specialites-grid, .bilan-grid, .competences-grid, .tech-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .specialite-card, .bilan-card, .competence-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  .specialite-card, .bilan-card, .competence-item {
+    width: 98%;
+    padding: 10px 4px;
+  }
+  .tech-img {
+    width: 98vw;
+    max-width: 250px;
+  }
+}
+.conseil, .objectif {
+  background: #fff0f6;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 18px auto;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(255,182,213,0.08);
+}
+
+.loisirs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+.loisirs-list li {
+  background: #ffd6e0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.mot-fin {
+  background: linear-gradient(90deg, #ffb6d5 0%, #ffeaf4 100%);
+  color: #222;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 0 0 24px 24px;
+  margin-top: 32px;
+}
+
+
+/* 2. Tout centré dans les sections */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  text-align: center;
+}
+/* Mets uniquement les grands titres du hero en rose */
+.hero h1,
+.hero h2 {
+  color: #d72660 !important;
+}
+
+/* Le reste du texte du hero (sous-titre, contact, etc.) en noir */
+.hero .subtitle,
+.hero .contact-info,
+.hero .contact-info a {
+  color: #222 !important;
+}
+.photo-profil {
+  display: block;
+  margin: 24px auto 12px auto;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffd6e0;
+  box-shadow: 0 2px 12px rgba(215,38,96,0.10);
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #ffe066; /* jaune plus foncé */
+  color: #222;
+}
+/* Texte noir en gras et police plus grande pour tout sauf titres */
+body, .hero .subtitle, .hero .contact-info, .hero .contact-info a,
+p, li, .competence-item, .desc-content, .tech-note, .objectif, .conseil {
+  font-weight: 600;
+  font-size: 1.13em;
+}
+
+/* Pour éviter d'impacter les titres */
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+.hero {
+  background: linear-gradient(120deg, #e6ffe6 0%, #b2f7b2 100%);
+  padding-top: 48px;
+  padding-bottom: 32px;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 2px 24px rgba(76, 175, 80, 0.10);
+}
+.mot-fin {
+  background: linear-gradient(90deg, #b2f7b2 0%, #e6ffe6 100%);
+  color: #222;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 0 0 24px 24px;
+  margin-top: 32px;
+}
+.stage-card {
+  background: #ffb6d5; /* rose plus foncé */
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(215,38,96,0.13);
+  padding: 24px 20px 20px 20px;
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+.stage-list li {
+  background: #ffd6e0; /* rose intermédiaire pour les items */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+}
+
+.conseil, .objectif, .loisirs-list li{
+  background: #ffd0e0; /* rose intermédiaire, moins foncé que #ffb6d5 */
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(255,182,213,0.10);
+  padding: 20px 18px;
+  margin: 18px auto;
+  max-width: 500px;
+  text-align: center;
+}
